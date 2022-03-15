@@ -11,17 +11,17 @@
     <div class="carousel-inner">
         <div class="item active"> <img src="images/banner.png" style="width:100%; height: 500px" alt="First slide">
             <div class="carousel-caption">
-                <h1>vacayhome<br> spa & Resort</h1>
+                <h1>vacayhome<br> {{$landing[0]->desc}}</h1>
             </div>
         </div>
         <div class="item"> <img src="images/banner2.png" style="width:100%; height: 500px" alt="Second slide">
             <div class="carousel-caption">
-                <h1>vacayhome<br> spa & Resort</h1>
+                <h1>vacayhome<br> {{$landing[0]->desc}}</h1>
             </div>
         </div>
         <div class="item"> <img src="images/banner3.png" style="width:100%; height: 500px" alt="Third slide">
             <div class="carousel-caption">
-                <h1>vacayhome<br> spa & Resort</h1>
+                <h1>vacayhome<br> {{$landing[0]->desc}}</h1>
             </div>
         </div>
 
