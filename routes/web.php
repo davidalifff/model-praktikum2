@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +16,49 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome', [
+    "title" => "Home"
+    ]);
 });
+
+Route::get('/about', function () {
+    return view('about', [
+    "title" => "About"
+    ]);
+});
+
+Route::get('/contact', function () {
+    return view('contact', [
+    "title" => "Contact"
+    ]);
+});
+
+Route::get('/dinning', function () {
+    return view('dinning', [
+    "title" => "Dinning"
+    ]);
+});
+
+Route::get('/gallery', function () {
+    return view('gallery', [
+    "title" => "Gallery"
+    ]);
+});
+
+Route::get('/news', function () {
+    return view('news', [
+    "title" => "News"
+    ]);
+});
+
+Route::get('/rooms', function () {
+    return view('rooms', [
+    "title" => "Rooms"
+    ]);
+});
+
+
+
 
 Auth::routes();
 
